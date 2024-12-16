@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aliza Imran Resume</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section id="personal-info">
+    <h1>Aliza Imran</h1>
+    <p>Email: <a href="mailto:alizaimran869@gmail.com">alizaimran869@gmail.com</a></p>
+    <p>Phone: 03128545441</p>
+    <a href="https://www.linkedin.com/in/aliza-rajpoot-3a91872a3/" target="_blank">LinkedIn</a>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li>Matriculation - Beacon City Grammar School</li>
+      <li>Intermediate - Allama Iqbal Govt Girls Degree College</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>TypeScript</li>
+      <li>CSS</li>
+      <li>HTML</li>
+      <li>Good Typing Speed</li>
+      <li>Ms Office</li>
+      <li>Digital Marketing</li>
+    </ul>
+  </section>
+
+  <button id="toggle-skills">Show/Hide Skills</button>
+
+  <script>
+    const toggleButton = document.getElementById('toggle-skills');
+    const skillsSection = document.getElementById('skills');
+
+    toggleButton.addEventListener('click', () => {
+      if (skillsSection.style.display === 'none' || skillsSection.style.display === '') {
+        skillsSection.style.display = 'block';
+      } else {
+        skillsSection.style.display = 'none';
+      }
+    });
+  </script>
+
+</body>
+</html>
